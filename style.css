@@ -76,7 +76,6 @@ body {
     display: block;
     width: 100%;
     height: auto;
-<<<<<<< HEAD
     border-radius: 20%; 
     margin-bottom: 20px;
 }
@@ -92,21 +91,5 @@ body {
     }
     .side {
         margin-bottom: 20px; 
-=======
-    border-radius: 50%; /* Agar gambar berbentuk lingkaran */
-    margin-bottom: 20px; /* Tambahkan margin bawah */
-}
-/* Untuk layar seluler dengan lebar maksimum 767px */
-@media screen and (max-width: 767px) {
-    .flex-container {
-        flex-direction: column; /* Mengubah orientasi flex menjadi kolom */
-    }
-    .side, .main, .biodata {
-        width: 100%; /* Mengisi lebar layar */
-        margin-top: 0; /* Menghilangkan margin atas */
-    }
-    .side {
-        margin-bottom: 20px; /* Menambahkan margin bawah untuk memisahkan dari konten utama */
->>>>>>> 9ff2e1b09f6c8cdc505436a9773f420921ddb1b2
     }
 }
