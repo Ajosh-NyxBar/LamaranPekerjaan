@@ -1,5 +1,5 @@
 function showContent(content) {
-    var contents = ['home', 'jobs', 'achievements', 'contact'];
+    var contents = ['home', 'jobs', 'achievements', 'contact', 'skck'];
     contents.forEach(function(item) {
         var element = document.getElementById(item + 'Content');
         if (content === item) {

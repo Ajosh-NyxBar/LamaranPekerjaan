@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #2980b9, #2c3e50); /* Gradien latar belakang */
+    background: linear-gradient(135deg, #2980b9, #2c3e50); 
 }
 
 .container {
@@ -13,7 +13,7 @@ body {
 }
 
 .title {
-    color: #fff; /* Warna teks judul */
+    color: #fff;
     text-align: center;
     margin-top: 20px;
 }
@@ -22,14 +22,16 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
 }
 
 .side {
-    background-color: rgba(255, 255, 255, 0.9); /* Latar belakang sisi dengan transparansi */
+    background-color: rgba(255, 255, 255, 0.9);
     padding: 20px;
     width: 200px;
     margin-top: 20px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+    border-radius: 20px 0 0 20px; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 .side ul {
@@ -46,33 +48,48 @@ body {
     color: #333;
     display: block;
     padding: 10px;
-    transition: background-color 0.3s ease; /* Animasi perubahan warna latar belakang */
 }
 
 .side ul li a:hover {
-    background-color: rgba(255, 255, 255, 0.7); /* Warna latar belakang saat dihover */
+    background-color: rgba(255, 255, 255, 0.7); 
 }
 
 .main {
-    background-color: rgba(255, 255, 255, 0.9); /* Latar belakang konten utama dengan transparansi */
+    background-color: rgba(255, 255, 255, 0.9); 
     padding: 20px;
     flex: 1;
     margin-top: 20px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); 
 }
 
 .biodata {
-    background-color: rgba(255, 255, 255, 0.9); /* Latar belakang biodata dengan transparansi */
+    background-color: rgba(255, 255, 255, 0.9);                 
     padding: 20px;
     width: 200px;
     margin-top: 20px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); 
+    border-radius: 0 20px 20px 0;
+    
 }
 
 .profile-img {
     display: block;
     width: 100%;
     height: auto;
-    border-radius: 50%; /* Agar gambar berbentuk lingkaran */
-    margin-bottom: 20px; /* Tambahkan margin bawah */
+    border-radius: 20%; 
+    margin-bottom: 20px;
+}
+
+
+@media screen and (max-width: 767px) {
+    .flex-container {
+        flex-direction: column;
+    }
+    .side, .main, .biodata {
+        width: 100%;
+        margin-top: 0;
+    }
+    .side {
+        margin-bottom: 20px; 
+    }
 }
